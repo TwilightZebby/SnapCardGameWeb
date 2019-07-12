@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Snap Card Game</title>
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" href="css/gameStyle.css">
+  </head>
+  
+  <body>
+    <h1>Snap Card Game</h1>
+    <p>This is a basic simulation of the classic card game 'Snap'.</p>
+    <h2>Intructions/Guide:</h2>
+    <p>To start the game, press the "Start Game" button.<br>This will only work for 2 Players.<br>Once the game starts, the deck of cards will be split between the Players. Then, the game will automatically reveal the top card of each Player's Hand.<br>The game will then wait for a couple seconds, to allow for Players to claim a 'Snap' - if there is one.<br>A 'Snap' is when there is a matching number or letter on the two showing cards. <i>EXAMPLE: Player 1 has a 2 of Hearts, and Player 2 has a 2 of Clubs. This would be a Snap as both are showing the number 2.</i><br>The game ends when one Player has all the cards (and thus, wins). </p>
+    <p>Player One's Snap Call button is "a"; whereas Player Two's Call button is "l".</p>
+    <hr>
+    
+    <!-- BUTTONS! -->
+    <input type="button" value="Start Game" id="startGameButton"/>
+    <input type="button" value="Reset Game" id="resetGameButton"/>
+    <hr id="buttonGameDivide">
+    
+    <div id="playingField">
+      <!-- THE FIRST PLAYER'S HAND -->
+      <div id="p1Hand">
+        <h2>Player 1's Hand</h2>
+        <p id="p1HandAmou"></p>
+        <p id="p1Status"></p>
+      </div>
+      
+      <!-- THE FIRST PLAYER'S SNAP PILE -->
+      <div id="p1SnapPile">
+        <p id="p1SnapCard"></p>
+      </div>
+      
+      <!-- THE MAIN DECK OF CARDS -->
+      <!-- Used to display the cards before the game has started. -->
+      <div id="fieldMiddle">
+        <p id="fieldCenterText"></p>
+      </div>
+      
+      <!-- THE SECOND PLAYER'S SNAP PILE -->
+      <div id="p2SnapPile">
+        <p id="p2SnapCard"></p>
+      </div>
+      
+      <!-- THE SECOND PLAYER'S HAND -->
+      <div id="p2Hand">
+        <h2>Player 2's Hand</h2>
+        <p id="p2HandAmou"></p>
+        <p id="p2Status"></p>
+      </div>
+      
+    </div>
+    
+  </body>
+  
+</html>

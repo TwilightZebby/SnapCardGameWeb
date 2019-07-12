@@ -1,0 +1,15 @@
+#playingField {
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+#playingField div {
+  width: 100px;
+  height: auto;
+  border: 1px solid blue;
+}
+
+#resetGameButton {
+  display: none;
+}
